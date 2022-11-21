@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="감염병"/>
+
+
+        <EditText
+            android:id="@+id/post_disease_edit"
+            android:padding="16dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="경험했던 질병을 입력하세요."
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="  제목  " />
+
+
+        <EditText
+            android:id="@+id/post_title_edit"
+            android:padding="16dp"
+            android:background="#eeeeee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="제목을 입력하세요."
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="벌점을 매겨주세요."/>
+
+    <RatingBar
+        android:id="@+id/post_penalty_edit"
+        style="?android:attr/ratingBarStyleIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="false"
+        android:max="5"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="내용"/>
+
+    <EditText
+        android:id="@+id/post_contents_edit"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#eeeeee"
+        android:hint="내용을 입력하세요."
+        />
+
+    <Button
+        android:id="@+id/post_save_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="등록하기"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/black"/>
+
+
+</LinearLayout>
