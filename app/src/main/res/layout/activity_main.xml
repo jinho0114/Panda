@@ -5,10 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#2B2B2B">
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        >
         <include layout="@layout/toolbar" />
     </LinearLayout>
 
@@ -31,3 +33,4 @@
         android:layout_marginBottom="16dp"
         android:src="@drawable/ic_edit" />
 </RelativeLayout>
+

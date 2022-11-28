@@ -8,4 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="holo_blue_light">#FF33B5E5</color>
+
+
+    <color name="bottom_nav_menu_selected_text">#FFFFFFFF</color>
+    <color name="bottom_nav_menu_unselected_text">#FFFFFFFF</color>
+    <color name="bottom_nav_menu_selected_icon">#FFFFFFFF</color>
+    <color name="bottom_nav_menu_unselected_icon">#FFFFFFFF</color>
 </resources>

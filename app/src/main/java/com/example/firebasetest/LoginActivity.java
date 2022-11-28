@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                                     FirebaseUser user = firebaseAuth.getCurrentUser();
                                     if(user !=null) {
                                         Toast.makeText(LoginActivity.this, "로그인 성공 : " + user.getUid(), Toast.LENGTH_SHORT).show();
-                                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                                        startActivity(new Intent(LoginActivity.this, InfoActivity.class));
                                     }
                                 } else {
                                     // 로그인 실패

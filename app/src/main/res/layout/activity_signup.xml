@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#2B2B2B"
     android:orientation="vertical"
-    tools:context=".SignUpActivity">
+    tools:context=".SignUpActivity"
+    >
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -19,7 +20,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="40dp"
         android:layout_marginTop="50dp"
-         />
+        />
     <TextView
         android:id="@+id/textView_signUpTitle"
         android:layout_width="wrap_content"
@@ -27,50 +28,68 @@
         android:layout_gravity="center"
         android:textStyle="bold"
         android:text="회원가입"
-        android:textColor="@android:color/black"
+        android:fontFamily="@font/applesdgothicneom"
+        android:textColor="@android:color/white"
         android:textSize="25sp" />
+
     <View
         android:id="@+id/view_line"
         android:layout_width="250dp"
         android:layout_height="1.2dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="20dp"
         android:layout_marginTop="10dp"
-        android:background="@android:color/black" />
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white" />
+
     <EditText
         android:id="@+id/editText_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="E-mail"
+        android:hint="이메일"
         android:inputType="textEmailAddress"
-        android:textColor="@android:color/black" />
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/white"/>
     <EditText
         android:id="@+id/editText_passWord"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="Password"
+        android:hint="암호"
         android:inputType="textPassword"
-        android:textColor="@android:color/black" />
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/white"/>
+    <EditText
+        android:id="@+id/editText_passWord2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="암호 확인"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/white"/>
     <EditText
         android:id="@+id/editText_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="Name"
+        android:hint="이름"
         android:inputType="textPersonName"
-        android:textColor="@android:color/black" />
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/white"/>
     <Button
         android:id="@+id/btn_join"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:background="@android:color/black"
-        android:text="Join"
-        android:textColor="@android:color/white" />
+        android:background="@drawable/roundbutton"
+        android:text="가입완료"
+
+        android:fontFamily="@font/applesdgothicneom"
+        android:textColor="@android:color/black" />
 </LinearLayout>

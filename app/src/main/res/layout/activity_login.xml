@@ -7,50 +7,53 @@
     android:gravity="center_vertical"
     android:orientation="vertical"
     tools:context=".LoginActivity">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-    <include layout="@layout/toolbar" />
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
+        android:textAlignment="center"
+        android:gravity="center"
+        android:background="#2B2B2B"
         >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginStart="40dp"
-            android:text="안녕하세요!"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/panda_removebg_preview">
 
+        </ImageView>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="36dp"
-            android:layout_marginBottom="60dp"
-            android:text="계속하려면 로그인"
-            android:textColor="#000000"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            />
+            android:text="팬데믹 정보를 한 눈에 다"
+            android:fontFamily="@font/applesdgothicneom"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            >
+
+        </TextView>
+
+
+
 
         <EditText
             android:id="@+id/login_email"
-            android:layout_width="323dp"
+            android:layout_width="335dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="8dp"
             android:textSize="20sp"
             android:background="@null"
-            android:hint="이메일" />
+            android:hint="이메일"
+            android:fontFamily="@font/applesdgothicneol"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"/>
 
         <EditText
             android:id="@+id/login_password"
@@ -60,7 +63,10 @@
             android:layout_margin="8dp"
             android:textSize="20sp"
             android:hint="비밀번호"
-            android:inputType="textPassword" />
+            android:fontFamily="@font/applesdgothicneol"
+            android:textColorHint="@color/white"
+            android:inputType="textPassword"
+            android:textColor="@color/white"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -74,9 +80,12 @@
                 android:layout_width="335dp"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
-                android:background="#000000"
+                android:background="@drawable/roundbutton"
                 android:text="로그인"
-                android:textColor="@color/white"
+                android:textSize="18dp"
+
+                android:fontFamily="@font/applesdgothicneol"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
         </LinearLayout>
         <LinearLayout
@@ -85,26 +94,28 @@
             android:layout_gravity="center"
             android:layout_marginTop="40sp"
             >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:text="계정이 없으신가요?"
-            android:textColor="#000000"
-            android:textSize="16sp"
-         />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="계정이 없으신가요?"
+                android:fontFamily="@font/applesdgothicneol"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
             <TextView
                 android:id="@+id/login_signup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="8dp"
                 android:layout_marginStart="4dp"
+                android:fontFamily="@font/applesdgothicneol"
                 android:text="회원가입"
-                android:textColor="@android:color/black"
+                android:textColor="@android:color/darker_gray"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </LinearLayout>
 
 
-</LinearLayout>
     </LinearLayout>
+</LinearLayout>

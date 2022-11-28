@@ -13,8 +13,47 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FireBaseTest">
         <activity
-            android:name=".Post2Activity"
+            android:name=".Disease_Mites_Activity"
             android:exported="false" />
+        <activity
+            android:name=".Disease_Mumps_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Cre_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Hepatitis_C_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Hepatitis_B_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Hepatitis_A_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Chikenpox_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Monkeypox_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Covid19_ActivityDiseaseList"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Influenza_ActivityDiseaseList"
+            android:exported="false" />
+        <activity
+            android:name=".Disease_Covid19_ActivityDiseaseList"
+            android:exported="false"/>
+        <activity
+            android:name=".Disease_List_MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".InfoActivity"
+            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Post2Activity"-->
+<!--            android:exported="false"/>-->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -27,6 +66,8 @@
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".PostActivity" />
+
+
     </application>
 
 </manifest>
