@@ -16,6 +16,11 @@ import org.w3c.dom.Text;
 import java.util.List;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
+
+    public void setDatas(List<Post> datas) {
+        this.datas = datas;
+    }
+
     private List<Post> datas;
 
     public PostAdapter(List<Post> datas) {

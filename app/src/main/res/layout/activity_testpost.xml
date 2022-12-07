@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Post2Activity"
+    android:background="#2B2B2B">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/toolbar" />
+        </LinearLayout>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="72dp"
             android:layout_height="wrap_content"
+
             android:padding="16dp"
-            android:text="감염병"/>
+            android:text="감염병"
+            android:textColor="@color/white" />
 
 
         <EditText
@@ -24,22 +38,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textColorHint="@color/white"
             android:hint="경험했던 질병을 입력하세요."
+            android:textColor="@color/white"
+            android:backgroundTint="#333333"
+
             />
     </LinearLayout>
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="72dp"
             android:layout_height="wrap_content"
             android:padding="16dp"
-            android:text="  제목  " />
+            android:text="  제목 "
+            android:textColor="@color/white" />
 
 
         <EditText
@@ -47,47 +64,61 @@
             android:padding="16dp"
             android:background="#eeeeee"
             android:layout_width="match_parent"
+            android:backgroundTint="#333333"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:textColor="@color/white"
             android:hint="제목을 입력하세요."
+            android:textColorHint="@color/white"
+            android:layout_weight="1"
             />
     </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="벌점을 매겨주세요."/>
+        android:text="벌점"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-    <RatingBar
-        android:id="@+id/post_penalty_edit"
-        style="?android:attr/ratingBarStyleIndicator"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:isIndicator="false"
-        android:max="5"
-        android:numStars="5"
-        android:rating="3"
-        android:stepSize="0.5"
 
-        />
+        <RatingBar
+            android:id="@+id/post_penalty_edit"
+            style="?android:attr/ratingBarStyleIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:max="5"
+            android:numStars="5"
+            android:rating="3"
+            android:stepSize="0.5"
+            />
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="72dp"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="내용"/>
+        android:text="내용"
+        android:textAlignment="center"
+        android:textColor="@color/white"/>
 
     <EditText
         android:id="@+id/post_contents_edit"
         android:padding="16dp"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="match_parent"
+        android:hint="제목을 입력하세요."
+        android:textColorHint="@color/white"
+        android:backgroundTint="#333333"
         android:layout_weight="1"
         android:background="#eeeeee"
-        android:hint="내용을 입력하세요."
         />
-
     <Button
         android:id="@+id/post_save_button"
         android:layout_width="match_parent"
@@ -95,6 +126,8 @@
         android:text="등록하기"
         android:textColor="#FFFFFF"
         android:backgroundTint="@color/black"/>
+
+
 
 
 </LinearLayout>

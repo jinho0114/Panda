@@ -1,4 +1,4 @@
-package com.example.firebasetest;
+package com.example.firebasetest.models;
 
 import com.google.firebase.firestore.IgnoreExtraProperties;
 

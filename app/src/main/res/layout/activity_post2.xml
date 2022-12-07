@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:hint="경험했던 질병을 입력하세요."
             android:backgroundTint="#333333"
 
@@ -107,14 +107,36 @@
         android:id="@+id/post2_contents"
         android:padding="16dp"
         android:layout_width="match_parent"
-        android:textColor="@color/black"
-        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
         android:hint="제목을 입력하세요."
         android:textColorHint="@color/white"
         android:backgroundTint="#333333"
         android:layout_weight="1"
         android:background="#eeeeee"
         />
+    <Button
+        android:id="@+id/comment_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="리뷰 작성"
+        android:textColor="@color/white"
+        android:textStyle="bold"></Button>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/comment_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
 
 
 
