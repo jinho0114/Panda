@@ -4,7 +4,8 @@
     tools:context="com/example/firebasetest/RegionActivity.java">
 
     <item android:id="@+id/action_btn1"
-        android:title="지역별 정보 보러가기"
+        android:title="지역별 조회"
+        app:itemTextColor="@color/white"
         app:showAsAction="always" />
 
 </menu>

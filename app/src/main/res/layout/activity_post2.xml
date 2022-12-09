@@ -34,6 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="@color/white"
+            android:textColorHint="@color/white"
             android:hint="경험했던 질병을 입력하세요."
             android:backgroundTint="#333333"
 

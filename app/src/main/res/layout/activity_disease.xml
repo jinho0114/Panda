@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DiseaseActivity"
+
+    android:padding="10dp"
+    android:background="#2B2B2B">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/toolbar" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/list"
+        android:text="감염병 목록보기 및 선택"
+       android:layout_gravity="center"
+        android:background="@drawable/disease_list_and_choice"
+        android:textSize="16sp"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:textColor="#FFFFFF"
+        >
+
+        <EditText
+            android:id="@+id/edit"
+            android:layout_width="300dp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="match_parent"
+            android:hint="질병명을 입력하세요"
+            android:textColorHint="#C8C8C8"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/search_disease"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0px"
+            android:background="@drawable/disease_search_button"
+            android:onClick="mOnClick"
+            android:text="검색"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/disease_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/disease_title"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="감염병 정보를 나타냅니다."
+        android:textStyle="bold"/>
+
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:background="#2B2B2B"
+        android:text="검색 가능한 목록:">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/disease_writer"
+            android:fontFamily="@font/applesdfothicneoeb"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </ScrollView>
+
+</LinearLayout>

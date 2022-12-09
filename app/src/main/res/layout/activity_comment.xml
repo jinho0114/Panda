@@ -28,6 +28,7 @@
         android:layout_weight="1"
         android:hint="내용을 입력하세요."
         android:textColorHint="@color/white"
+        android:textColor="@color/white"
         android:gravity="center"
         />
 
