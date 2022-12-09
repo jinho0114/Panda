@@ -47,9 +47,6 @@
             android:name=".Disease_Influenza_ActivityDiseaseList"
             android:exported="false" />
         <activity
-            android:name=".InfoActivity"
-            android:exported="false" />
-        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
@@ -61,11 +58,11 @@
         <activity
             android:name=".LoginActivity"
             android:exported="false"/>
-<!--        <activity-->
-<!--            android:name=".Post2Activity"-->
-<!--            android:exported="false"/>-->
         <activity
-            android:name=".SplashActivity"
+            android:name=".RegionActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".InfoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
