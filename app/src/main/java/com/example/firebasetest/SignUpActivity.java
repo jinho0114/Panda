@@ -29,9 +29,9 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
     private FirebaseFirestore mStore = FirebaseFirestore.getInstance();
     private EditText editTextEmail;
-    private EditText editTextPassword;
+    private EditText editTextPassword,editTextPassword2;
     private EditText editTextName;
-
+    String tpw, tpw2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +39,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
         editTextEmail = (EditText) findViewById(R.id.editText_email);
         editTextPassword = (EditText) findViewById(R.id.editText_passWord);
+        editTextPassword2 = (EditText) findViewById(R.id.editText_passWord2);
         editTextName = (EditText) findViewById(R.id.editText_name);
 
         findViewById(R.id.btn_join).setOnClickListener(this);
@@ -68,7 +69,13 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
 
                     }
                 });
+        tpw = editTextPassword.getText().toString();
+        tpw2 = editTextPassword2.getText().toString();
+        if(!tpw.equals(tpw2)){
+            Toast.makeText(this, "비밀번호가 일치하지 않습니다", Toast.LENGTH_SHORT).show();
+        }
     }
+
 }
 //                if (!editTextEmail.getText().toString().equals("") && !editTextPassword.getText().toString().equals("")) {
 //                    // 이메일과 비밀번호가 공백이 아닌 경우

@@ -7,8 +7,9 @@
     android:id="@+id/toolbar"
     app:contentInsetStart="0dp"
     app:menu="@menu/menu_toolbar"
-    android:background="#2B2B2B">
-
+    android:background="#2B2B2B"
+    app:itemTextColor="@color/white"
+>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

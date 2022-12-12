@@ -18,8 +18,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="통계는 광역시, 도 기준입니다"
+        android:gravity="center"
         android:textColor="@color/white"
-        android:textStyle="italic|bold"></TextView>
+        android:textStyle="bold"></TextView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -243,4 +244,7 @@
         android:layout_height="wrap_content"
         android:textStyle="italic|bold"
         android:visibility="invisible"></TextView>
+
+
+
 </LinearLayout>

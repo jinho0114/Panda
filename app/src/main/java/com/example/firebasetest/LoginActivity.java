@@ -44,15 +44,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-        @Override
-    protected void onStart() {
-        super.onStart();
-        FirebaseUser user = firebaseAuth.getCurrentUser();
-        if(user !=null){
-            Toast.makeText(this, "자동 로그인 :"+user.getUid(), Toast.LENGTH_SHORT).show();
-//            startActivity(new Intent(this, MainActivity.class));
-        }
-    }
+//        @Override
+//    protected void onStart() {
+//        super.onStart();
+//        FirebaseUser user = firebaseAuth.getCurrentUser();
+//        if(user !=null){
+//            Toast.makeText(this, "자동 로그인 :"+user.getUid(), Toast.LENGTH_SHORT).show();
+////            startActivity(new Intent(this, MainActivity.class));
+//        }
+//    }
 
     @Override
     public void onClick(View v) {

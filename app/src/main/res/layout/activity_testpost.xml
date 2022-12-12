@@ -91,6 +91,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:isIndicator="false"
+
             android:max="5"
             android:numStars="5"
             android:rating="3"
@@ -113,7 +114,7 @@
         android:layout_width="match_parent"
         android:textColor="@color/white"
         android:layout_height="match_parent"
-        android:hint="제목을 입력하세요."
+        android:hint="내용을 입력하세요."
         android:textColorHint="@color/white"
         android:backgroundTint="#333333"
         android:layout_weight="1"

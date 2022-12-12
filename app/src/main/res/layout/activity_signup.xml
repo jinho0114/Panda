@@ -57,20 +57,20 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:ems="10"
-        android:hint="암호"
+        android:hint="암호 ( 6자리 이상 )"
         android:inputType="textPassword"
         android:textColorHint="@android:color/white"
         android:textColor="@color/white"/>
-<!--    <EditText-->
-<!--        android:id="@+id/editText_passWord2"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_gravity="center"-->
-<!--        android:ems="10"-->
-<!--        android:hint="암호 확인"-->
-<!--        android:inputType="textPassword"-->
-<!--        android:textColorHint="@android:color/white"-->
-<!--        android:textColor="@color/white"/>-->
+    <EditText
+        android:id="@+id/editText_passWord2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="10"
+        android:hint="암호 확인"
+        android:inputType="textPassword"
+        android:textColorHint="@android:color/white"
+        android:textColor="@color/white"/>
     <EditText
         android:id="@+id/editText_name"
         android:layout_width="wrap_content"
