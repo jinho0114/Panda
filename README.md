@@ -21,8 +21,11 @@
    댓글 기능 구현으로서 사용자들의 원할할 소통을 제공
    
 개발 도구
+
 언어/프레임워크 : 자바
+
 Server : FireBase
+
 DB : FireStore(NoSql)
 
 
