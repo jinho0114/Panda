@@ -13,11 +13,16 @@
 메인기능
 1. 로그인 및 회원가입(파이어베이스)
 2. 감염병 상세 정보 기능
-  -https://www.data.go.kr/iim/api/selectAPIAcountView.do(공공데이터포터 감염병 상세정보 api 사용)
+  -https://www.data.go.kr/iim/api/selectAPIAcountView.do(공공데이터포털 감염병 상세정보 api 사용)
 3. 코로나 지역별 현황 기능
  -https://api.corona-19.kr (굿바이 코로나 api 사용)
 4. 감염병 리뷰 기능(댓글 기능 까지)
  - 사용자들이 겪은 감염병 후기나 일종의 꿀팁을 공유 함으로써 더욱 더 신빙성 높은 정보나 정말 필요한 정보를 얻을 수 있다.
    댓글 기능 구현으로서 사용자들의 원할할 소통을 제공
    
+개발 도구
+언어/프레임워크 : 자바
+Server : FireBase
+DB : FireStore(NoSql)
+
 
