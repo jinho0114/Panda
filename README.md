@@ -16,9 +16,12 @@
   -https://www.data.go.kr/iim/api/selectAPIAcountView.do(공공데이터포털 감염병 상세정보 api 사용)
 3. 코로나 지역별 현황 기능
  -https://api.corona-19.kr (굿바이 코로나 api 사용)
-4. 감염병 리뷰 기능(댓글 기능 까지)
+4. 감염병 리뷰 및 벌점기능(댓글 기능 까지)
  - 사용자들이 겪은 감염병 후기나 일종의 꿀팁을 공유 함으로써 더욱 더 신빙성 높은 정보나 정말 필요한 정보를 얻을 수 있다.
-   댓글 기능 구현으로서 사용자들의 원할할 소통을 제공
+ 
+ - 댓글 기능 구현으로서 사용자들의 원할할 소통을 제공
+   
+ - 벌점 기능으로 아픈 정도르 표현
    
 개발 도구
 
@@ -28,4 +31,10 @@ Server : FireBase
 
 DB : FireStore(NoSql)
 
-
+<img width="300" alt="스크린샷 2022-12-11 오후 8 29 16" src="https://user-images.githubusercontent.com/86508110/208295574-74e52105-e901-4042-81c4-a643ae4b0421.png">
+<img width="300" alt="스크린샷 2022-12-12 오후 4 18 30" src="https://user-images.githubusercontent.com/86508110/208295563-f31e88c2-59d5-4095-a146-45649fbf36af.png">
+<img width="300" alt="스크린샷 2022-12-11 오후 8 34 09" src="https://user-images.githubusercontent.com/86508110/208295575-fb5e0b52-f63d-4dbd-b71b-de5ccc7d601d.png">
+<img width="300" alt="스크린샷 2022-12-11 오후 10 04 24" src="https://user-images.githubusercontent.com/86508110/208295572-8e9b180d-9e25-41cf-abd5-7a44f7fb1ce8.png">
+<img width="300" alt="스크린샷 2022-12-11 오후 8 34 40" src="https://user-images.githubusercontent.com/86508110/208295570-5ece8800-242a-42b2-b332-fb7ceedbc8e7.png">
+<img width="300" alt="스크린샷 2022-12-12 오후 4 18 12" src="https://user-images.githubusercontent.com/86508110/208295569-b0f37a3d-0b4a-4e38-aff8-0e2175f0ddd7.png">
+<img width="300" alt="스크린샷 2022-12-11 오후 8 39 14" src="https://user-images.githubusercontent.com/86508110/208295579-7196eee0-57a5-42bf-944f-123b216e2574.png">
